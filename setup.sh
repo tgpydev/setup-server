@@ -53,6 +53,8 @@ pipx ensurepath
 export PATH=$PATH:$HOME/.local/bin
 
 pipx install poetry
+poetry config virtualenvs.in-project true
+poetry config virtualenvs.prefer-active-python true
 
 echo_info "Шаг 4: Установка Docker..."
 
